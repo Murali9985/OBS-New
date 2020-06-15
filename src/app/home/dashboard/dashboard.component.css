@@ -1,0 +1,14 @@
+.topFix{
+    margin-top: 150px;
+}
+
+.leftFix{
+    margin-left: 50px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+.card-footer{
+    height: 70px;
+}
