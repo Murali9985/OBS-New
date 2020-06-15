@@ -1,0 +1,34 @@
+.navbar {
+    background: #fefefe 0% 0% no-repeat padding-box;
+    height: 60px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 25px;
+    color: white;
+}
+
+.navbar ul {
+    margin-top: 10px;
+}
+
+a:hover {
+    text-decoration: none;
+    padding-bottom: 16px;
+    border-bottom: 4px solid #EFAF4E;
+}
+
+a {
+    color: black;
+}
+
+.linkActive {
+    padding-bottom: 16px;
+    border-bottom: 4px solid #EFAF4E;
+}
+
+.header {
+    text-align: center;
+    margin: 15px 0px;
+}

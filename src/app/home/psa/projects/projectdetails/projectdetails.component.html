@@ -1,0 +1,38 @@
+<div>
+    <div *ngIf='toEdit == 0' class="container">
+        <div class="card shadow">
+            <div class="card-header">
+                Details of Project {{name}}
+            </div>
+            <div class="card-body">
+                <div class="row mb-3">
+                    <div class="col-4">
+                        Name : {{name}}
+                    </div>
+                    <div class="col-4">
+                        Duration : IT Servies
+                    </div>
+                    <div class="col-4">
+                        Status : Active
+                    </div>
+                </div>
+            </div>
+          
+
+        </div>
+    </div>
+    <div *ngIf='toEdit == 1' class="container">
+        <div class="card shadow">
+            <div class="card-header">
+                Edit {{name}} Project
+            </div>
+            <div class="card-body">
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

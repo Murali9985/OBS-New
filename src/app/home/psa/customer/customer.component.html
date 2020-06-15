@@ -1,0 +1,31 @@
+<div>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <th>Customer Id</th>
+                <th>Customer Name</th>
+                <th>Services</th>
+                <th></th>
+                <th></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ojas</td>
+                    <td>IT Services</td>
+                    <td><button class="btn" [routerLink]="['customerdetails','Ojas', 0]">More Info</button></td>
+                    <td><i class="fa fa-edit" [routerLink]="['customerdetails','Ojas',1]"></i></td>
+
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>TCS</td>
+                    <td>IT Services</td>
+                    <td><button class="btn">More Info</button></td>
+                    <td><i class="fa fa-edit"></i></td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

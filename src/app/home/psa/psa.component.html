@@ -1,1 +1,48 @@
-<p>psa works!</p>
+<div>
+
+    <nav class="navbar navbar-expand-md">
+        <img src="../../assets/images/ojas_logo.png"  class="navbar-brand">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav nav-align">
+                <li><a routerLink='dashboard' routerLinkActive='linkActive'>Dashboard</a></li>
+                <li><a routerLink='customer' routerLinkActive='linkActive'>Customers</a></li>
+                <li><a routerLink='contracts' routerLinkActive='linkActive'>Contracts</a></li>
+                <li><a routerLink='projects' routerLinkActive='linkActive'>Projects</a></li>
+                <li><a routerLink='reports' routerLinkActive='linkActive'>Reports</a></li>
+            </div>
+
+        </div>
+        <div class="navbar-nav ml-auto ">
+            <span class="nav-item nav-link searchGroup"><input placeholder="Search"><i class="fa fa-search searchPlace"
+                    aria-hidden="true"></i></span>
+            <div class="horizontalNav">
+                <div class="dropdown">
+                    <a href="#" class="nav-item nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Profile</a>
+                      <a class="dropdown-item" href="#">Settings</a>
+                      <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                  </div>
+                  
+                
+                <a href="#" class="nav-item nav-link"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                <a href="#" class="nav-item nav-link"><i class="fa fa-bell-o" aria-hidden="true"></i></a>
+
+            </div> 
+
+    </div>
+    </nav>
+
+
+
+
+    <!-- <div class="header">
+        <strong>Professional Services Automation</strong>
+    </div> -->
+    <router-outlet></router-outlet>
+</div>

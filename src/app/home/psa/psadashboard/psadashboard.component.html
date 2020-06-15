@@ -1,0 +1,225 @@
+<div class="container mt-5">
+    <table class="table">
+        <thead>
+            <th>Customers</th>
+            <th>No of Contracts</th>
+            <th>No of Projects</th>
+            <th>Total Revenue</th>
+            <th>No of Resources</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ojas</td>
+                <td><a data-toggle="modal" data-target="#contracts">5</a></td>
+                <td><a data-toggle="modal" data-target="#projects">10</a></td>
+                <td><a data-toggle="modal" data-target="#revenue">100000</a></td>
+                <td><a data-toggle="modal" data-target="#resources">50</a></td>
+            </tr>
+            <tr>
+                <td>TCS</td>
+                <td><a data-toggle="modal" data-target="#contracts">5</a></td>
+                <td><a data-toggle="modal" data-target="#projects">10</a></td>
+                <td><a data-toggle="modal" data-target="#revenue">100000</a></td>
+                <td><a data-toggle="modal" data-target="#resources">50</a></td>
+            </tr>
+            <tr>
+                <td>Cognizant</td>
+                <td><a data-toggle="modal" data-target="#contracts">5</a></td>
+                <td><a data-toggle="modal" data-target="#projects">10</a></td>
+                <td><a data-toggle="modal" data-target="#revenue">100000</a></td>
+                <td><a data-toggle="modal" data-target="#resources">50</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- contracts modal -->
+<div class="modal" id="contracts">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Contracts</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <table class="table">
+                    <thead>
+                        <th>Contract Name</th>
+                        <th>Duration</th>
+                        <th>Status</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ojas</td>
+                            <td>30 Months</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>Ojas</td>
+                            <td>30 Months</td>
+                            <td>In Active</td>
+                        </tr>
+                        <tr>
+                            <td>Ojas</td>
+                            <td>30 Months</td>
+                            <td>Active</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- projects modal -->
+
+<div class="modal" id="projects">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Projects</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <table class="table">
+                    <thead>
+                        <th>Project Name</th>
+                        <th>Duration</th>
+                        <th>Revenue</th>
+                        <th>Status</th>
+                    </thead>
+                    <tbody>
+                        <tr (click)='navigateToProject("Ojas")'  data-dismiss="modal">
+                            <td>Ojas</td>
+                            <td>30 Months</td>
+                            <td>200000</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr (click)='navigateToProject("Recruitex")'  data-dismiss="modal">
+                            <td>Recruitex</td>
+                            <td>30 Months</td>
+                            <td>200000</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr (click)='navigateToProject("Ojas")' data-dismiss="modal">
+                            <td>Ojas</td>
+                            <td>30 Months</td>
+                            <td>200000</td>
+                            <td>Active</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- project revenue -->
+<div class="modal" id="revenue">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Projects</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <table class="table">
+                    <thead>
+                        <th>Project Name</th>
+                        <th>Revenue</th>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ojas</td>
+                            <td>200000</td>
+                        </tr>
+                        <tr>
+                            <td>Ojas</td>
+                            <td>200000</td>
+                        </tr>
+                        <tr>
+                            <td>Ojas</td>
+                            <td>200000</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="resources">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Projects</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <table class="table">
+                    <thead>
+                        <th>Project Name</th>
+                        <th>Resources</th>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>OBS</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>Recruitex</td>
+                            <td>10</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
