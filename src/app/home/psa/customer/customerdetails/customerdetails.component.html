@@ -1,5 +1,5 @@
 <div>
-    <div *ngIf='toEdit == 0' class="container">
+    <div class="container">
         <div class="card shadow">
             <div class="card-header">
                 Details of Customer {{name}}
@@ -81,62 +81,7 @@
             </table>
         </div>
     </div>
-    <div *ngIf='toEdit == 1' class="container">
-        <div class="card shadow">
-            <div class="card-header">
-                Edit {{name}} Customer
-            </div>
-            <div class="card-body">
-                <div class="row mb-3">
-                    <div class="col-4">
-                        Name : <input name="name" [(ngModel)]='name'>
-                    </div>
-                    <div class="col-4">
-                        Services : <input>
-                    </div>
-                    <div class="col-4">
-                        Status : Active
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col-4">
-                        Address : {{name}} &nbsp;<i class="fa fa-info" style="cursor: pointer;" data-toggle="modal" data-target="#address"></i>
-                    </div>
-                    <div class="col-4">
-                        BDM : <input>
-                    </div>
-                    <div class="col-4">
-                        contact: <input> <i class="fa fa-info"></i>
-                    </div>
-                </div>
-                <div class="card-header">
-                    Contract Details
-                </div>
-                <table class="table">
-                    <thead>
-                        <th>Contract Id</th>
-                        <th>Contract Name</th>
-                        <th>Duration</th>
-                        <th>Status</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Ojas Contract</td>
-                            <td>3 Years</td>
-                            <td>Active</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Ojas Contract</td>
-                            <td>3 Years</td>
-                            <td>Active</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
+    
 </div>
 
 

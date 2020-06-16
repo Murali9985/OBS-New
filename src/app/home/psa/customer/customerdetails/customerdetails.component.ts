@@ -8,14 +8,14 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class CustomerdetailsComponent implements OnInit {
   name:any;
-  toEdit: any;
+
   constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
     this.route.params.subscribe(params => {
       this.name = params['name'];
-      this.toEdit = params['edit'];
-      console.log('edit',this.toEdit);
+    
+    
       
    });
   }
