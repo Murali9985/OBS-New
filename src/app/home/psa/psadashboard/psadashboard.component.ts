@@ -18,4 +18,7 @@ export class PsadashboardComponent implements OnInit {
   navigateToCustomerAdd(value){
     this.route.navigate(['home/psa/customer/customize', value])
   }
+  navigateToCustomer(value){
+    this.route.navigate(['home/psa/customer/customerdetails',value])
+  }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-customizecustomer',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomizecustomerComponent implements OnInit {
 
-  constructor() { }
+  customized:any;
+  idValue: any;
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.route.params.subscribe(params => {
+      this.customized = params['customizedParam'];
+      this.idValue = params['value'];
+      console.log(this.customized, this.idValue);
+    }
+    )
   }
 
 }
